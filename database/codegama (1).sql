@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 11, 2020 at 06:55 PM
+-- Generation Time: Sep 11, 2020 at 07:04 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.2.32
 
@@ -32,6 +32,13 @@ CREATE TABLE `admin` (
   `admin_name` varchar(100) NOT NULL,
   `admin_pass` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`id`, `admin_name`, `admin_pass`) VALUES
+(1, 'admin', 'e10adc3949ba59abbe56e057f20f883e');
 
 -- --------------------------------------------------------
 
@@ -66,6 +73,13 @@ CREATE TABLE `videos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
+-- Dumping data for table `videos`
+--
+
+INSERT INTO `videos` (`id`, `title`, `image`, `description`, `video`, `watermark`, `user_id`, `created_at`) VALUES
+(1, 'test', 'best-remedies-logo.jpeg', 'test', 'VID-20171122-WA0000[1].mp4', 'copyright-watermark-1.png', 0, '2020-09-11');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -95,7 +109,7 @@ ALTER TABLE `videos`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `students`
@@ -107,7 +121,7 @@ ALTER TABLE `students`
 -- AUTO_INCREMENT for table `videos`
 --
 ALTER TABLE `videos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

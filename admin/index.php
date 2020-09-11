@@ -3,9 +3,7 @@ session_start();//session starts here
 
 if(!empty($_SESSION))
 {
-    if($_SESSION['role'] == 'admin'){
-         header("Location: dashboard.php");//redirect to login page to secure the welcome page without login access.
-    }
+    
 }
 ?>
 <html>
@@ -30,7 +28,7 @@ if(!empty($_SESSION))
                     <h3 class="panel-title">Sign In</h3>
                 </div>
                 <div class="panel-body">
-                    <form role="form" method="post" action="login.php" autocomplete="new-password">
+                    <form role="form" method="post" action="index.php" autocomplete="new-password">
                         <fieldset>
                             <div class="form-group"  >
                                 <input class="form-control" placeholder="Name" name="admin_name" type="text" autofocus required="required" autocomplete="off">

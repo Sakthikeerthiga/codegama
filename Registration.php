@@ -38,7 +38,7 @@
 
                         </fieldset>
                     </form>
-                    <center><b>Already registered ?</b> <br></b><a href="Login.php">Login here</a></center><!--for centered text-->
+                    <center><b>Already registered ?</b> <br></b><a href="index.php">Login here</a></center><!--for centered text-->
                 </div>
             </div>
         </div>

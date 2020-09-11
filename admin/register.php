@@ -37,7 +37,7 @@ session_start();//session starts here
 
                         </fieldset>
                     </form>
-                    Already a member.<a href="login.php">Login now</a>
+                    Already a member.<a href="index.php">Login now</a>
                 </div>
             </div>
         </div>
